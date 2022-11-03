@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Lemonada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="add-gift-container">
+            <p class="gift-text">أحصل على الهدية بعد تنفيذ المهام</p>
+            <div class="remaining-mission">
+                <p class="remaining-text">المتبقي للحصول على الهدية <span class="missions-nums">0</span>  <span class="spelling">مهام</span></p>
+                <p class="random-gift-is">الرجاء إضافة الهدايا أولاً</p>
+                <input class="get-random-gift" type="button" value="أحصل على هديتك">
+                <img src="./img/pngwing.com.png" alt="">
+                <p class="your-gift-text">الهدية هي <span>متابعة حلقة من مسلسلك المفضل</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="mission-container">
+        <div class="add-missions-container">
+            <form action="">
+                <label for="add-mission-text">ما هي المهام التي تريد إنجازها؟</label>
+                <p class="mission-warning">الرجاء إضافة مهمة</p>
+                <div class="add-a-mission-container">
+                    <input type="submit" value="أضف" id="add-new-mission">
+                    <input type="text" name="add-mission" id="add-mission"> 
+                </div>
+                
+                
+                <select name="priorities" id="priorities">
+                    <option value="important-urgent">هام وعاجل</option>
+                    <option value="important-not-urgent">هام وغير عاجل</option>
+                    <option value="not-important-urgent">غير هام وعاجل</option>
+                    <option value="not-important-not-urgent">غير هام وغير عاجل</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="gifts-container">
+        <div class="gift-container">
+            <p class="which-gifts-text">أضف الهدايا التي تحب ان تهديها لنفسك </p>
+            <p class="gift-warning">الرجاء إضافة الهدية</p>
+            <div class="add-gift-text-input">
+                <input type="button" value="أضف" id="add-gift">
+            <input type="text" name="add-gift" id="gift-field">
+            </div>
+           
+            <ul class="gifts-list" dir="rtl">
+                
+            </ul>
+            <p class="note">سوف يتم الاختيار من هذه القائمة عشوائيا</p>
+        </div>
+    </div>
+    <div class="added-missions-container">
+        
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

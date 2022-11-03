@@ -1,0 +1,211 @@
+*{
+    /*border: 1px solid red;*/
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    color: #222831;
+    font-size: 0.5rem;
+    font-family: 'Lemonada', cursive;
+    
+
+}
+header, .mission-container, .gifts-container,
+.added-missions-container{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    color:#EEEEEE;
+    width: 200px;
+    text-align: center;
+}
+.m-title{
+    padding: 5px 2px;
+    background-color: #222831;
+    border-radius: 20px;
+}
+header{
+    margin: 10px 0;
+    background-color:#00ADB5 ;
+    justify-content: center;
+    text-align: center;
+    
+}
+.gift-text, .which-gifts-text{
+    border-bottom:2px dotted #f3f5f7;
+    padding: 5px;
+}
+
+.remaining-text{
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222831
+}
+
+.mission-container{
+    margin-bottom: 10px;
+    background-color: #4d6566;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #EEEEEE;
+}
+ul li{
+    text-align: right;
+}
+label, select{
+    display: block;
+    border-bottom:2px dotted #feffff;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    
+}
+select
+{
+   background: #4d6566;
+   padding:5px;
+   color:#fffbfb;
+   font-size:0.9rem;
+   font-family:Arial, Helvetica, sans-serif;
+   line-height:1;
+   border:solid 2px #ffffff;
+   border-radius:5px;
+    outline: none;
+}
+input[type=text]{
+    width:100px;
+    margin: 10px 0;
+}
+input[type=button], input[type=submit]{
+    background-color: #E84545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 1px rgba(214, 195, 195, 0.5);
+}
+input[type=button]:hover, input[type=submit]:hover{
+    background-color: #e04040;
+    color:#9399a1
+}
+input[type=button]:active, input[type=submit]:active{
+    background-color: #f8c6c6;
+    color:#222831;
+    box-shadow: 1px 2px rgba(14, 13, 13, 0.5);
+}
+#add-new-mission{
+    background-color: #2a5556;
+}
+#add-gift{
+    background-color: #6e4a4a;
+}
+.your-gift-text{
+    display: none;
+    padding: 5px;
+    border: 1px dotted #f3f5f7;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.remaining-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin-top: 10px;
+    display: block;
+    height: 100px;
+
+}
+.add-missions-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.gifts-container{
+    background-color: #7D5A5A;
+}
+.added-mission{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color:#EEEEEE;
+    align-self: center;
+
+
+}
+.important-urgent{
+    background-color: #E84545;
+}
+.important-not-urgent{
+    background-color: #0D7377;
+}
+.not-important-urgent{
+    background-color: #F07B3F;
+}
+.not-important-not-urgent{
+    background-color: #52616B;
+}
+.note{
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px dotted white;
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+.gift-container{
+    display: flex;
+    flex-direction: column;
+}
+.add-gift-text-input{
+    align-self: center;
+}
+.gift-warning{
+    visibility:hidden;
+    text-align: center;
+    color:#E84545;
+    background-color: #222831;
+    margin: 0;
+    align-self: center;
+    width: 100px;
+}
+.mission-warning{
+    visibility:hidden;
+    text-align: center;
+    color:#E84545;
+    background-color: #222831;
+    margin:10px 0 0 0;
+    align-self: center;
+    width: 100px;
+}
+
+.random-gift-is{
+    visibility:hidden;
+    text-align: center;
+    color:#E84545;
+    background-color: #222831;
+    margin: 5px auto;
+    width: 120px;
+}
+
+.mission-done{
+    text-decoration: line-through;
+    color: #52616B;
+    background-color: #f3f5f7;
+}
+
+.get-random-gift{
+    display: none;
+    background-color: #222831;
+}
