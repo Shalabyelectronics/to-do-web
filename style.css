@@ -12,6 +12,10 @@ body{
     
 
 }
+.web-title{
+    text-align: center;
+    border-bottom: 2px solid;
+}
 header, .mission-container, .gifts-container,
 .added-missions-container{
     align-self: center;
