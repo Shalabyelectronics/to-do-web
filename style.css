@@ -24,7 +24,7 @@ header, .mission-container, .gifts-container,
     padding: 10px;
     border-radius: 20px;
     color:#EEEEEE;
-    width: 200px;
+    width: 300px;
     text-align: center;
 }
 .m-title{
@@ -42,10 +42,11 @@ header{
 .gift-text, .which-gifts-text{
     border-bottom:2px dotted #f3f5f7;
     padding: 5px;
+    font-size: 0.9rem;
 }
 
 .remaining-text{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: #222831
@@ -64,6 +65,7 @@ ul li{
 }
 label, select{
     display: block;
+    font-size: 0.9rem;
     border-bottom:2px dotted #feffff;
     text-align: center;
     align-self: center;
@@ -73,6 +75,7 @@ label, select{
 select
 {
    background: #4d6566;
+   text-align: right;
    padding:5px;
    color:#fffbfb;
    font-size:0.9rem;
@@ -83,13 +86,16 @@ select
     outline: none;
 }
 input[type=text]{
-    width:100px;
-    margin: 10px 0;
+    width:200px;
+    height: 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
 }
 input[type=button], input[type=submit]{
     background-color: #E84545;
     color: white;
-    padding: 5px 10px;
+    font-size: 1rem;
+    padding: 10px 10px;
     border-radius: 20px;
     box-shadow: 0px 1px rgba(214, 195, 195, 0.5);
 }
@@ -167,6 +173,7 @@ form{
     padding: 5px;
     text-align: center;
     margin-right: 10px;
+    font-size: 1.2rem;
 }
 .gift-container{
     display: flex;
