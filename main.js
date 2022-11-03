@@ -15,7 +15,7 @@ $("#add-gift").click(()=>{
     }
     
 })
-//We need to add here
+
 $(".get-random-gift").click(()=>{
     if (giftList.length > 0){
         $('img').css("display","none")
@@ -33,6 +33,13 @@ $(".get-random-gift").click(()=>{
         },1500)
     }
 })
+
+function reAddnewMission(){
+    if (giftCountUpdate > 0){
+        $(".your-gift-text").css("display","none")
+        $('img').css("display","block")
+    }
+}
 
 function randomGift(){
     let randomIndex = Math.floor(Math.random() * giftList.length)
@@ -71,6 +78,7 @@ $('#add-new-mission').click((e)=>{
             $(".mission-warning").css("visibility","hidden")
         },2000)
     }
+    reAddnewMission()
     addDoneListenner([`.mission-title${missionCount}`,`.done-btn${missionCount}`])
     addDeleteListenner([`.d-m-${missionCount} `,`.delete-btn${missionCount}`])
 })
@@ -108,4 +116,6 @@ function getGift(){
         $('.get-random-gift').css('display','block')  
     }
 }
+
+
 
